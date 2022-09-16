@@ -1,0 +1,15 @@
+/root/Presentation/dolly/install/dolly/share/ament_index/resource_index/package_run_dependencies/dolly
+/root/Presentation/dolly/install/dolly/share/ament_index/resource_index/parent_prefix_path/dolly
+/root/Presentation/dolly/install/dolly/share/dolly/environment/ament_prefix_path.sh
+/root/Presentation/dolly/install/dolly/share/dolly/environment/ament_prefix_path.dsv
+/root/Presentation/dolly/install/dolly/share/dolly/environment/path.sh
+/root/Presentation/dolly/install/dolly/share/dolly/environment/path.dsv
+/root/Presentation/dolly/install/dolly/share/dolly/local_setup.bash
+/root/Presentation/dolly/install/dolly/share/dolly/local_setup.sh
+/root/Presentation/dolly/install/dolly/share/dolly/local_setup.zsh
+/root/Presentation/dolly/install/dolly/share/dolly/local_setup.dsv
+/root/Presentation/dolly/install/dolly/share/dolly/package.dsv
+/root/Presentation/dolly/install/dolly/share/ament_index/resource_index/packages/dolly
+/root/Presentation/dolly/install/dolly/share/dolly/cmake/dollyConfig.cmake
+/root/Presentation/dolly/install/dolly/share/dolly/cmake/dollyConfig-version.cmake
+/root/Presentation/dolly/install/dolly/share/dolly/package.xml

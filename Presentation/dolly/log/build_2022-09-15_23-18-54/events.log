@@ -1,0 +1,678 @@
+[0.000000] (-) TimerEvent: {}
+[0.000623] (dolly_follow) JobQueued: {'identifier': 'dolly_follow', 'dependencies': OrderedDict()}
+[0.000763] (dolly_gazebo) JobQueued: {'identifier': 'dolly_gazebo', 'dependencies': OrderedDict([('dolly_follow', '/root/Presentation/dolly/install/dolly_follow')])}
+[0.000964] (dolly_ignition) JobQueued: {'identifier': 'dolly_ignition', 'dependencies': OrderedDict([('dolly_follow', '/root/Presentation/dolly/install/dolly_follow')])}
+[0.000996] (dolly) JobQueued: {'identifier': 'dolly', 'dependencies': OrderedDict([('dolly_follow', '/root/Presentation/dolly/install/dolly_follow'), ('dolly_gazebo', '/root/Presentation/dolly/install/dolly_gazebo'), ('dolly_ignition', '/root/Presentation/dolly/install/dolly_ignition')])}
+[0.001050] (dolly_follow) JobStarted: {'identifier': 'dolly_follow'}
+[0.016221] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'cmake'}
+[0.016777] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '/root/Presentation/dolly/src/dolly/dolly_follow', '-DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_follow'], 'cwd': '/root/Presentation/dolly/build/dolly_follow', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly_follow'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[0.099710] (-) TimerEvent: {}
+[0.155895] (dolly_follow) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.199802] (-) TimerEvent: {}
+[0.249819] (dolly_follow) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.258996] (dolly_follow) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.299914] (-) TimerEvent: {}
+[0.324587] (dolly_follow) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.327071] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.398452] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.399994] (-) TimerEvent: {}
+[0.408053] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.408506] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.410806] (dolly_follow) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.481390] (dolly_follow) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.482285] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500103] (-) TimerEvent: {}
+[0.555671] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.569889] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.570447] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.579570] (dolly_follow) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.597652] (dolly_follow) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.598064] (dolly_follow) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.600245] (-) TimerEvent: {}
+[0.701358] (-) TimerEvent: {}
+[0.732109] (dolly_follow) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.764772] (dolly_follow) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.770967] (dolly_follow) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.801460] (-) TimerEvent: {}
+[0.873811] (dolly_follow) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.897380] (dolly_follow) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.901572] (-) TimerEvent: {}
+[0.959960] (dolly_follow) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.001727] (-) TimerEvent: {}
+[1.032918] (dolly_follow) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.069734] (dolly_follow) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.071374] (dolly_follow) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.073081] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.101860] (-) TimerEvent: {}
+[1.149596] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.149947] (dolly_follow) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.201986] (-) TimerEvent: {}
+[1.224409] (dolly_follow) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.224766] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.297995] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.298334] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.302060] (-) TimerEvent: {}
+[1.372386] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.374000] (dolly_follow) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.402249] (-) TimerEvent: {}
+[1.502824] (-) TimerEvent: {}
+[1.525359] (dolly_follow) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[1.586140] (dolly_follow) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.602963] (-) TimerEvent: {}
+[1.639245] (dolly_follow) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.639956] (dolly_follow) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.640536] (dolly_follow) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.640874] (dolly_follow) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.641093] (dolly_follow) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.641379] (dolly_follow) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.641632] (dolly_follow) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.641986] (dolly_follow) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.642221] (dolly_follow) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.642659] (dolly_follow) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.645904] (dolly_follow) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.653269] (dolly_follow) StdoutLine: {'line': b'-- Generating done\n'}
+[1.654571] (dolly_follow) StdoutLine: {'line': b'-- Build files have been written to: /root/Presentation/dolly/build/dolly_follow\n'}
+[1.661483] (dolly_follow) CommandEnded: {'returncode': 0}
+[1.662509] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'build'}
+[1.664042] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/Presentation/dolly/build/dolly_follow', '--', '-j16', '-l16'], 'cwd': '/root/Presentation/dolly/build/dolly_follow', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly_follow'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[1.703139] (-) TimerEvent: {}
+[1.712704] (dolly_follow) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dolly_follow\x1b[0m\n'}
+[1.784750] (dolly_follow) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dolly_follow.dir/src/dolly_follow.cpp.o\x1b[0m\n'}
+[1.803241] (-) TimerEvent: {}
+[1.903606] (-) TimerEvent: {}
+[2.004009] (-) TimerEvent: {}
+[2.104404] (-) TimerEvent: {}
+[2.204815] (-) TimerEvent: {}
+[2.305197] (-) TimerEvent: {}
+[2.405605] (-) TimerEvent: {}
+[2.506275] (-) TimerEvent: {}
+[2.606673] (-) TimerEvent: {}
+[2.707033] (-) TimerEvent: {}
+[2.807692] (-) TimerEvent: {}
+[2.908096] (-) TimerEvent: {}
+[3.008493] (-) TimerEvent: {}
+[3.108920] (-) TimerEvent: {}
+[3.209318] (-) TimerEvent: {}
+[3.309701] (-) TimerEvent: {}
+[3.410096] (-) TimerEvent: {}
+[3.510486] (-) TimerEvent: {}
+[3.610904] (-) TimerEvent: {}
+[3.711295] (-) TimerEvent: {}
+[3.811615] (-) TimerEvent: {}
+[3.911968] (-) TimerEvent: {}
+[4.012320] (-) TimerEvent: {}
+[4.112706] (-) TimerEvent: {}
+[4.213109] (-) TimerEvent: {}
+[4.313487] (-) TimerEvent: {}
+[4.414941] (-) TimerEvent: {}
+[4.515330] (-) TimerEvent: {}
+[4.615781] (-) TimerEvent: {}
+[4.716183] (-) TimerEvent: {}
+[4.816663] (-) TimerEvent: {}
+[4.917045] (-) TimerEvent: {}
+[5.017394] (-) TimerEvent: {}
+[5.117765] (-) TimerEvent: {}
+[5.218122] (-) TimerEvent: {}
+[5.318501] (-) TimerEvent: {}
+[5.418892] (-) TimerEvent: {}
+[5.519257] (-) TimerEvent: {}
+[5.619623] (-) TimerEvent: {}
+[5.719960] (-) TimerEvent: {}
+[5.820327] (-) TimerEvent: {}
+[5.920762] (-) TimerEvent: {}
+[6.021222] (dolly_follow) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable dolly_follow\x1b[0m\n'}
+[6.021566] (-) TimerEvent: {}
+[6.121863] (-) TimerEvent: {}
+[6.222343] (-) TimerEvent: {}
+[6.314194] (dolly_follow) StdoutLine: {'line': b'[100%] Built target dolly_follow\n'}
+[6.322444] (-) TimerEvent: {}
+[6.329116] (dolly_follow) CommandEnded: {'returncode': 0}
+[6.352964] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'install'}
+[6.364586] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/Presentation/dolly/build/dolly_follow'], 'cwd': '/root/Presentation/dolly/build/dolly_follow', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly_follow'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[6.377490] (dolly_follow) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.377883] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/lib/dolly_follow/dolly_follow\n'}
+[6.384846] (dolly_follow) StdoutLine: {'line': b'-- Set runtime path of "/root/Presentation/dolly/install/dolly_follow/lib/dolly_follow/dolly_follow" to ""\n'}
+[6.385065] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/ament_index/resource_index/package_run_dependencies/dolly_follow\n'}
+[6.385130] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/ament_index/resource_index/parent_prefix_path/dolly_follow\n'}
+[6.385213] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/environment/ament_prefix_path.sh\n'}
+[6.385286] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/environment/ament_prefix_path.dsv\n'}
+[6.385383] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/environment/path.sh\n'}
+[6.385486] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/environment/path.dsv\n'}
+[6.385595] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/local_setup.bash\n'}
+[6.385719] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/local_setup.sh\n'}
+[6.385808] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/local_setup.zsh\n'}
+[6.385950] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/local_setup.dsv\n'}
+[6.386053] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.dsv\n'}
+[6.386190] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/ament_index/resource_index/packages/dolly_follow\n'}
+[6.386314] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/cmake/dolly_followConfig.cmake\n'}
+[6.386404] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/cmake/dolly_followConfig-version.cmake\n'}
+[6.386489] (dolly_follow) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.xml\n'}
+[6.388756] (dolly_follow) CommandEnded: {'returncode': 0}
+[6.422690] (-) TimerEvent: {}
+[6.451329] (dolly_follow) JobEnded: {'identifier': 'dolly_follow', 'rc': 0}
+[6.454249] (dolly_gazebo) JobStarted: {'identifier': 'dolly_gazebo'}
+[6.461482] (dolly_ignition) JobStarted: {'identifier': 'dolly_ignition'}
+[6.471950] (dolly_ignition) JobProgress: {'identifier': 'dolly_ignition', 'progress': 'cmake'}
+[6.472178] (dolly_ignition) Command: {'cmd': ['/usr/bin/cmake', '/root/Presentation/dolly/src/dolly/dolly_ignition', '-DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_ignition'], 'cwd': '/root/Presentation/dolly/build/dolly_ignition', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly_ignition'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy')]), 'shell': False}
+[6.475853] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'cmake'}
+[6.476005] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/root/Presentation/dolly/src/dolly/dolly_gazebo', '-DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_gazebo'], 'cwd': '/root/Presentation/dolly/build/dolly_gazebo', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly_gazebo'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy')]), 'shell': False}
+[6.522758] (-) TimerEvent: {}
+[6.523760] (dolly_ignition) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[6.527054] (dolly_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[6.572389] (dolly_ignition) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[6.579458] (dolly_ignition) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[6.584306] (dolly_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[6.590258] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[6.622881] (-) TimerEvent: {}
+[6.647046] (dolly_ignition) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[6.648288] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.664172] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[6.664992] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.714768] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.722994] (-) TimerEvent: {}
+[6.724233] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.724506] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.726540] (dolly_ignition) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[6.729456] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.738436] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.738660] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.740774] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[6.801185] (dolly_ignition) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[6.802154] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.814985] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[6.816026] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.823100] (-) TimerEvent: {}
+[6.877132] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.898201] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.899221] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.900090] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.920469] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.920822] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[6.921491] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.921663] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[6.923184] (-) TimerEvent: {}
+[6.925396] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.3.0\n'}
+[6.925894] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[6.927126] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [loader]\n'}
+[6.928356] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1-loader -- found version 1.3.0\n'}
+[6.928880] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-loader\n'}
+[6.929962] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [register]\n'}
+[6.931176] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1-register -- found version 1.3.0\n'}
+[6.931573] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-register\n'}
+[6.933717] (dolly_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") \n'}
+[6.933956] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.3.0\n'}
+[6.934278] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[6.938383] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[6.959490] (dolly_gazebo) StdoutLine: {'line': b'--   Found bullet, version 2.88\n'}
+[7.023285] (-) TimerEvent: {}
+[7.071794] (dolly_gazebo) StdoutLine: {'line': b'-- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") \n'}
+[7.123391] (-) TimerEvent: {}
+[7.128927] (dolly_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") \n'}
+[7.194015] (dolly_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.0.0") \n'}
+[7.211949] (dolly_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[7.223536] (-) TimerEvent: {}
+[7.258991] (dolly_ignition) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") \n'}
+[7.262762] (dolly_ignition) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[7.266981] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[7.282770] (dolly_ignition) StdoutLine: {'line': b'--   Found libzmq , version 4.3.2\n'}
+[7.323649] (-) TimerEvent: {}
+[7.326144] (dolly_ignition) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[7.334054] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[7.353137] (dolly_ignition) StdoutLine: {'line': b'--   Found uuid, version 2.34.0\n'}
+[7.398761] (dolly_ignition) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[7.401379] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[7.402181] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[7.421448] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[7.423739] (-) TimerEvent: {}
+[7.427217] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[7.450184] (dolly_ignition) StdoutLine: {'line': b'--   Found tinyxml2, version 6.2.0\n'}
+[7.492470] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-transport8> component [log]\n'}
+[7.494157] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-transport8-log -- found version 8.3.0\n'}
+[7.494518] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8-log\n'}
+[7.496495] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[7.498522] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[7.499209] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[7.499927] (dolly_ignition) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[7.500298] (dolly_ignition) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[7.501434] (dolly_ignition) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[7.503612] (dolly_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[7.508836] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [profiler]\n'}
+[7.509965] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3-profiler -- found version 3.14.2\n'}
+[7.510400] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-profiler\n'}
+[7.511615] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [events]\n'}
+[7.513299] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3-events -- found version 3.14.2\n'}
+[7.513658] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-events\n'}
+[7.513908] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[7.514809] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [av]\n'}
+[7.516063] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3-av -- found version 3.14.2\n'}
+[7.516405] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-av\n'}
+[7.516535] (dolly_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") \n'}
+[7.518960] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[7.520317] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[7.523252] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[7.523819] (-) TimerEvent: {}
+[7.525226] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[7.525610] (dolly_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[7.530035] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[7.536154] (dolly_ignition) StdoutLine: {'line': b'--   Found libswscale, version 5.5.100\n'}
+[7.546068] (dolly_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[7.579534] (dolly_ignition) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[7.584259] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[7.593619] (dolly_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[7.597622] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[7.599774] (dolly_ignition) StdoutLine: {'line': b'--   Found libavdevice , version 58.8.100\n'}
+[7.606512] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[7.609690] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[7.609980] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[7.612963] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[7.613265] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[7.616048] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[7.616307] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[7.619111] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[7.619400] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[7.622259] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[7.622574] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[7.623898] (-) TimerEvent: {}
+[7.625296] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[7.646743] (dolly_ignition) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[7.652457] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[7.668336] (dolly_ignition) StdoutLine: {'line': b'--   Found libavformat, version 58.29.100\n'}
+[7.689772] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[7.690533] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.3.0\n'}
+[7.690872] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[7.700080] (dolly_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") \n'}
+[7.703651] (dolly_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[7.707298] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[7.711745] (dolly_ignition) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[7.717486] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[7.723187] (dolly_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.2\n'}
+[7.723983] (-) TimerEvent: {}
+[7.737612] (dolly_ignition) StdoutLine: {'line': b'--   Found libavcodec, version 58.54.100\n'}
+[7.764342] (dolly_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[7.769858] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[7.787177] (dolly_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.34.0\n'}
+[7.788651] (dolly_ignition) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[7.793107] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[7.809172] (dolly_ignition) StdoutLine: {'line': b'--   Found libavutil, version 56.31.100\n'}
+[7.824133] (-) TimerEvent: {}
+[7.834701] (dolly_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[7.835981] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[7.836575] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[7.850909] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[7.852645] (dolly_ignition) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[7.856156] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.6.0\n'}
+[7.856639] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[7.856983] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[7.877805] (dolly_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 6.2.0\n'}
+[7.923124] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[7.924185] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[7.924373] (-) TimerEvent: {}
+[7.924574] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[7.924899] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[7.925332] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[7.926875] (dolly_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[7.934127] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[7.935336] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.2\n'}
+[7.935806] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[7.936152] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[7.938320] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.6.0\n'}
+[7.938815] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[7.946689] (dolly_ignition) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  \n'}
+[7.956239] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[7.975289] (dolly_ignition) StdoutLine: {'line': b'--   Found jsoncpp, version 1.7.4\n'}
+[8.023773] (dolly_ignition) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[8.024454] (-) TimerEvent: {}
+[8.025341] (dolly_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  \n'}
+[8.031606] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[8.032354] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[8.051658] (dolly_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.7.4\n'}
+[8.052452] (dolly_ignition) StdoutLine: {'line': b'--   Found libzip, version 1.5.1\n'}
+[8.099180] (dolly_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[8.099813] (dolly_ignition) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[8.100197] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[8.100589] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[8.100997] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[8.104016] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-gui3 -- found version 3.11.2\n'}
+[8.104322] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gui3\n'}
+[8.105248] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[8.123178] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[8.123649] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[8.124273] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.3.0\n'}
+[8.124486] (-) TimerEvent: {}
+[8.124649] (dolly_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.5.1\n'}
+[8.124982] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.3.0\n'}
+[8.127059] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-rendering3 -- found version 3.6.0\n'}
+[8.127794] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-rendering3\n'}
+[8.128331] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[8.128936] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[8.129616] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[8.129819] (dolly_ignition) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[8.129979] (dolly_ignition) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[8.139644] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[8.140900] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.2\n'}
+[8.141496] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[8.141922] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[8.142979] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [events]\n'}
+[8.143924] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.3.0\n'}
+[8.144460] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[8.144672] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [all]\n'}
+[8.146077] (dolly_ignition) StdoutLine: {'line': b'-- Looking for all libraries of ignition-plugin1 -- found version 1.3.0\n'}
+[8.146770] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.3.0\n'}
+[8.150426] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[8.171184] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-physics2 -- found version 2.5.1\n'}
+[8.171432] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics2\n'}
+[8.171743] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[8.172080] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[8.172214] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-math6> component [eigen3]\n'}
+[8.173274] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6-eigen3 -- found version 6.13.0\n'}
+[8.173656] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6-eigen3\n'}
+[8.175867] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.3.0\n'}
+[8.176055] (dolly_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[8.176584] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[8.177216] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[8.177475] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-physics2> component [mesh]\n'}
+[8.177777] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[8.178701] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-physics2-mesh -- found version 2.5.1\n'}
+[8.179100] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics2-mesh\n'}
+[8.179369] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[8.180070] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-physics2> component [sdf]\n'}
+[8.180798] (dolly_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[8.181256] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-physics2-sdf -- found version 2.5.1\n'}
+[8.181609] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics2-sdf\n'}
+[8.183758] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3 -- found version 3.4.0\n'}
+[8.184053] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3\n'}
+[8.197195] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[8.197435] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[8.197690] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.3.0\n'}
+[8.197972] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-rendering3 -- found version 3.6.0\n'}
+[8.198242] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[8.198521] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.3.0\n'}
+[8.199943] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [rendering]\n'}
+[8.200325] (dolly_gazebo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[8.200448] (dolly_gazebo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.201329] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-rendering -- found version 3.4.0\n'}
+[8.201705] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-rendering\n'}
+[8.202484] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [air_pressure]\n'}
+[8.203780] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-air_pressure -- found version 3.4.0\n'}
+[8.204135] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-air_pressure\n'}
+[8.205020] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [altimeter]\n'}
+[8.206109] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-altimeter -- found version 3.4.0\n'}
+[8.206453] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-altimeter\n'}
+[8.207653] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [camera]\n'}
+[8.208704] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-camera -- found version 3.4.0\n'}
+[8.209032] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-camera\n'}
+[8.209870] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [gpu_lidar]\n'}
+[8.210961] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-gpu_lidar -- found version 3.4.0\n'}
+[8.211308] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-gpu_lidar\n'}
+[8.212156] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [imu]\n'}
+[8.213656] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-imu -- found version 3.4.0\n'}
+[8.214371] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-imu\n'}
+[8.215411] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [logical_camera]\n'}
+[8.216678] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-logical_camera -- found version 3.4.0\n'}
+[8.217015] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-logical_camera\n'}
+[8.217917] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [magnetometer]\n'}
+[8.219137] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-magnetometer -- found version 3.4.0\n'}
+[8.219582] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-magnetometer\n'}
+[8.220598] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [depth_camera]\n'}
+[8.221691] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-depth_camera -- found version 3.4.0\n'}
+[8.222048] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-depth_camera\n'}
+[8.223184] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [thermal_camera]\n'}
+[8.224254] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-thermal_camera -- found version 3.4.0\n'}
+[8.224567] (-) TimerEvent: {}
+[8.224790] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-thermal_camera\n'}
+[8.225845] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-rendering3 -- found version 3.6.0\n'}
+[8.226137] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[8.240167] (dolly_ignition) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[8.257101] (dolly_ignition) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[8.257415] (dolly_ignition) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.324739] (-) TimerEvent: {}
+[8.325489] (dolly_gazebo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[8.377308] (dolly_ignition) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[8.397173] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.407627] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[8.409323] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.410519] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[8.415879] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.419499] (dolly_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.423749] (dolly_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[8.424810] (-) TimerEvent: {}
+[8.426175] (dolly_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /root/Presentation/dolly/build/dolly_gazebo\n'}
+[8.433358] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[8.434641] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'build'}
+[8.438151] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/Presentation/dolly/build/dolly_gazebo', '--', '-j16', '-l16'], 'cwd': '/root/Presentation/dolly/build/dolly_gazebo', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly_gazebo'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy')]), 'shell': False}
+[8.447626] (dolly_ignition) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.457338] (dolly_ignition) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[8.459226] (dolly_ignition) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.460647] (dolly_ignition) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[8.465780] (dolly_ignition) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.470844] (dolly_ignition) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.475497] (dolly_ignition) StdoutLine: {'line': b'-- Generating done\n'}
+[8.478018] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[8.478495] (dolly_ignition) StdoutLine: {'line': b'-- Build files have been written to: /root/Presentation/dolly/build/dolly_ignition\n'}
+[8.487735] (dolly_ignition) CommandEnded: {'returncode': 0}
+[8.488738] (dolly_ignition) JobProgress: {'identifier': 'dolly_ignition', 'progress': 'build'}
+[8.489142] (dolly_ignition) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/Presentation/dolly/build/dolly_ignition', '--', '-j16', '-l16'], 'cwd': '/root/Presentation/dolly/build/dolly_ignition', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly_ignition'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy')]), 'shell': False}
+[8.501355] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'install'}
+[8.501914] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/Presentation/dolly/build/dolly_gazebo'], 'cwd': '/root/Presentation/dolly/build/dolly_gazebo', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly_gazebo'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy')]), 'shell': False}
+[8.512168] (dolly_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.512605] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//launch\n'}
+[8.512821] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//launch/dolly.launch.py\n'}
+[8.513038] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models\n'}
+[8.513189] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female\n'}
+[8.513326] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials\n'}
+[8.513471] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures\n'}
+[8.513620] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/brown_eye.png\n'}
+[8.513712] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/casual_female.png\n'}
+[8.513790] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyebrow002.png\n'}
+[8.513876] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyelashes01.png\n'}
+[8.513970] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_diffuse.png\n'}
+[8.514049] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_normal.png\n'}
+[8.514128] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_diffuse.png\n'}
+[8.514215] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_normal.png\n'}
+[8.514308] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/ponytail01_diffuse.png\n'}
+[8.514385] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/shoes05_diffuse.png\n'}
+[8.514453] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/tongue01_diffuse.png\n'}
+[8.514508] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/young_lightskinned_female_diffuse.png\n'}
+[8.514598] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/meshes\n'}
+[8.514674] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/meshes/casual_female.dae\n'}
+[8.514764] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.config\n'}
+[8.514852] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.sdf\n'}
+[8.514939] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails\n'}
+[8.515029] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/1.png\n'}
+[8.515115] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/2.png\n'}
+[8.515214] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/3.png\n'}
+[8.515311] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/4.png\n'}
+[8.515397] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/5.png\n'}
+[8.515470] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain\n'}
+[8.515572] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials\n'}
+[8.515634] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures\n'}
+[8.515724] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain (original).jpg\n'}
+[8.515791] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain.jpg\n'}
+[8.515867] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/forest.jpg\n'}
+[8.515940] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.config\n'}
+[8.516014] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.sdf\n'}
+[8.516093] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly\n'}
+[8.516173] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials\n'}
+[8.516252] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/scripts\n'}
+[8.516327] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/scripts/script.material\n'}
+[8.516397] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/textures\n'}
+[8.516460] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/textures/sheep.jpg\n'}
+[8.516587] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.config\n'}
+[8.516647] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.sdf\n'}
+[8.516760] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean\n'}
+[8.516839] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials\n'}
+[8.516938] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs\n'}
+[8.517019] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL\n'}
+[8.517110] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.frag\n'}
+[8.517192] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.vert\n'}
+[8.517250] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/scripts\n'}
+[8.517320] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/scripts/ocean.material\n'}
+[8.517373] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures\n'}
+[8.517448] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/License and source soil_sand_0045_01.txt\n'}
+[8.517508] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds.jpg\n'}
+[8.517582] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_bk.jpg\n'}
+[8.517650] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_dn.jpg\n'}
+[8.517737] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_fr.jpg\n'}
+[8.517822] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_lf.jpg\n'}
+[8.517888] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_rt.jpg\n'}
+[8.517945] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_up.jpg\n'}
+[8.518026] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/normals.dds\n'}
+[8.518085] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/soil_sand_0045_01.jpg\n'}
+[8.518148] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh-simple.dae\n'}
+[8.518244] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.blend\n'}
+[8.518306] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.dae\n'}
+[8.518386] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh_below.dae\n'}
+[8.518443] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.config\n'}
+[8.518536] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.sdf\n'}
+[8.518626] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//rviz\n'}
+[8.518704] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//rviz/dolly_gazebo.rviz\n'}
+[8.518775] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//worlds\n'}
+[8.518858] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_city.world\n'}
+[8.518930] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_empty.world\n'}
+[8.518990] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.sh\n'}
+[8.519075] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.dsv\n'}
+[8.519190] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/ament_index/resource_index/package_run_dependencies/dolly_gazebo\n'}
+[8.519274] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/ament_index/resource_index/parent_prefix_path/dolly_gazebo\n'}
+[8.519329] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.sh\n'}
+[8.519383] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.dsv\n'}
+[8.519458] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/path.sh\n'}
+[8.519523] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/path.dsv\n'}
+[8.519635] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/local_setup.bash\n'}
+[8.519703] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/local_setup.sh\n'}
+[8.519782] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/local_setup.zsh\n'}
+[8.519838] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/local_setup.dsv\n'}
+[8.519890] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.dsv\n'}
+[8.519945] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/ament_index/resource_index/packages/dolly_gazebo\n'}
+[8.520004] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig.cmake\n'}
+[8.520067] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig-version.cmake\n'}
+[8.520128] (dolly_gazebo) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.xml\n'}
+[8.521825] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[8.525169] (-) TimerEvent: {}
+[8.538276] (dolly_ignition) CommandEnded: {'returncode': 0}
+[8.563562] (dolly_gazebo) JobEnded: {'identifier': 'dolly_gazebo', 'rc': 0}
+[8.566457] (dolly_ignition) JobProgress: {'identifier': 'dolly_ignition', 'progress': 'install'}
+[8.566733] (dolly_ignition) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/Presentation/dolly/build/dolly_ignition'], 'cwd': '/root/Presentation/dolly/build/dolly_ignition', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly_ignition'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy')]), 'shell': False}
+[8.574234] (dolly_ignition) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.574663] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//ign\n'}
+[8.574931] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//ign/gui.config\n'}
+[8.575179] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//launch\n'}
+[8.575419] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//launch/dolly.launch.py\n'}
+[8.575644] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models\n'}
+[8.575879] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female\n'}
+[8.576104] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials\n'}
+[8.576345] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures\n'}
+[8.576594] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/brown_eye.png\n'}
+[8.576808] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/casual_female.png\n'}
+[8.576871] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/eyebrow002.png\n'}
+[8.576948] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/eyelashes01.png\n'}
+[8.577021] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit01_diffuse.png\n'}
+[8.577102] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit01_normal.png\n'}
+[8.577180] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit02_diffuse.png\n'}
+[8.577247] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit02_normal.png\n'}
+[8.577312] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/ponytail01_diffuse.png\n'}
+[8.577386] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/shoes05_diffuse.png\n'}
+[8.577451] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/tongue01_diffuse.png\n'}
+[8.577523] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/young_lightskinned_female_diffuse.png\n'}
+[8.577610] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/meshes\n'}
+[8.577677] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/meshes/casual_female.dae\n'}
+[8.577760] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/model.config\n'}
+[8.577839] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/model.sdf\n'}
+[8.577931] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails\n'}
+[8.578009] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/1.png\n'}
+[8.578095] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/2.png\n'}
+[8.578177] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/3.png\n'}
+[8.578264] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/4.png\n'}
+[8.578322] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/5.png\n'}
+[8.578404] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition\n'}
+[8.578458] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/materials\n'}
+[8.578515] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/materials/textures\n'}
+[8.578602] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/materials/textures/cardboard_box.png\n'}
+[8.578668] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/materials/textures/sheep.jpg\n'}
+[8.578740] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/meshes\n'}
+[8.578806] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/meshes/cardboard_box.dae\n'}
+[8.578864] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/model.config\n'}
+[8.578918] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/model.sdf\n'}
+[8.578975] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//rviz\n'}
+[8.579039] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//rviz/dolly_ignition.rviz\n'}
+[8.579089] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//worlds\n'}
+[8.579137] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition//worlds/station.sdf\n'}
+[8.579186] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/environment/dolly_ignition.sh\n'}
+[8.579235] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/environment/dolly_ignition.dsv\n'}
+[8.579284] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/ament_index/resource_index/package_run_dependencies/dolly_ignition\n'}
+[8.579333] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/ament_index/resource_index/parent_prefix_path/dolly_ignition\n'}
+[8.579381] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/environment/ament_prefix_path.sh\n'}
+[8.579430] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/environment/ament_prefix_path.dsv\n'}
+[8.579479] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/environment/path.sh\n'}
+[8.579527] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/environment/path.dsv\n'}
+[8.579587] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/local_setup.bash\n'}
+[8.579636] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/local_setup.sh\n'}
+[8.579685] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/local_setup.zsh\n'}
+[8.579733] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/local_setup.dsv\n'}
+[8.579781] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.dsv\n'}
+[8.579830] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/ament_index/resource_index/packages/dolly_ignition\n'}
+[8.579878] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/cmake/dolly_ignitionConfig.cmake\n'}
+[8.579927] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/cmake/dolly_ignitionConfig-version.cmake\n'}
+[8.580003] (dolly_ignition) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.xml\n'}
+[8.580921] (dolly_ignition) CommandEnded: {'returncode': 0}
+[8.619195] (dolly_ignition) JobEnded: {'identifier': 'dolly_ignition', 'rc': 0}
+[8.620761] (dolly) JobStarted: {'identifier': 'dolly'}
+[8.625479] (-) TimerEvent: {}
+[8.629213] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'cmake'}
+[8.629412] (dolly) Command: {'cmd': ['/usr/bin/cmake', '/root/Presentation/dolly/src/dolly/dolly', '-DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly'], 'cwd': '/root/Presentation/dolly/build/dolly', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/opt/ros/foxy')]), 'shell': False}
+[8.683114] (dolly) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[8.725598] (-) TimerEvent: {}
+[8.737719] (dolly) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[8.743506] (dolly) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[8.819743] (dolly) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[8.821525] (dolly) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[8.825668] (-) TimerEvent: {}
+[8.900660] (dolly) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[8.911557] (dolly) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[8.911866] (dolly) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[8.914406] (dolly) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[8.925819] (-) TimerEvent: {}
+[8.994657] (dolly) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[8.995629] (dolly) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[9.025961] (-) TimerEvent: {}
+[9.079854] (dolly) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.111414] (dolly) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.112584] (dolly) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.115702] (dolly) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[9.126098] (-) TimerEvent: {}
+[9.132714] (dolly) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[9.133109] (dolly) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.226276] (-) TimerEvent: {}
+[9.274488] (dolly) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[9.326425] (-) TimerEvent: {}
+[9.356419] (dolly) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[9.359259] (dolly) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.361050] (dolly) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.365362] (dolly) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.370473] (dolly) StdoutLine: {'line': b'-- Generating done\n'}
+[9.372155] (dolly) StdoutLine: {'line': b'-- Build files have been written to: /root/Presentation/dolly/build/dolly\n'}
+[9.377681] (dolly) CommandEnded: {'returncode': 0}
+[9.378455] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'build'}
+[9.378768] (dolly) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/Presentation/dolly/build/dolly', '--', '-j16', '-l16'], 'cwd': '/root/Presentation/dolly/build/dolly', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/opt/ros/foxy')]), 'shell': False}
+[9.426626] (-) TimerEvent: {}
+[9.428122] (dolly) CommandEnded: {'returncode': 0}
+[9.451722] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'install'}
+[9.454158] (dolly) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/Presentation/dolly/build/dolly'], 'cwd': '/root/Presentation/dolly/build/dolly', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,1965,0'), ('HOSTNAME', 'matheus-laptop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/Presentation/dolly/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/Presentation/dolly/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/models:/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_RESOURCE_PATH', '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/worlds:/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/Presentation/dolly/build/dolly'), ('LC_ALL', 'C.UTF-8'), ('SDF_PATH', '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/worlds:/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/models'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/opt/ros/foxy')]), 'shell': False}
+[9.465998] (dolly) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.466356] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/ament_index/resource_index/package_run_dependencies/dolly\n'}
+[9.466604] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/ament_index/resource_index/parent_prefix_path/dolly\n'}
+[9.466788] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/environment/ament_prefix_path.sh\n'}
+[9.466953] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/environment/ament_prefix_path.dsv\n'}
+[9.467143] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/environment/path.sh\n'}
+[9.467311] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/environment/path.dsv\n'}
+[9.467465] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/local_setup.bash\n'}
+[9.467589] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/local_setup.sh\n'}
+[9.467696] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/local_setup.zsh\n'}
+[9.467776] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/local_setup.dsv\n'}
+[9.467879] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/package.dsv\n'}
+[9.468041] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/ament_index/resource_index/packages/dolly\n'}
+[9.468193] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/cmake/dollyConfig.cmake\n'}
+[9.468295] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/cmake/dollyConfig-version.cmake\n'}
+[9.468432] (dolly) StdoutLine: {'line': b'-- Installing: /root/Presentation/dolly/install/dolly/share/dolly/package.xml\n'}
+[9.470608] (dolly) CommandEnded: {'returncode': 0}
+[9.518760] (dolly) JobEnded: {'identifier': 'dolly', 'rc': 0}
+[9.519894] (-) EventReactorShutdown: {}

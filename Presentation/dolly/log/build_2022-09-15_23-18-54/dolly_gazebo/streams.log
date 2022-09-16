@@ -1,0 +1,191 @@
+[0.024s] Invoking command in '/root/Presentation/dolly/build/dolly_gazebo': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly_gazebo -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_gazebo
+[0.073s] -- The C compiler identification is GNU 9.4.0
+[0.130s] -- The CXX compiler identification is GNU 9.4.0
+[0.136s] -- Check for working C compiler: /usr/bin/cc
+[0.210s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.211s] -- Detecting C compiler ABI info
+[0.275s] -- Detecting C compiler ABI info - done
+[0.284s] -- Detecting C compile features
+[0.284s] -- Detecting C compile features - done
+[0.287s] -- Check for working CXX compiler: /usr/bin/c++
+[0.361s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.362s] -- Detecting CXX compiler ABI info
+[0.444s] -- Detecting CXX compiler ABI info - done
+[0.466s] -- Detecting CXX compile features
+[0.467s] -- Detecting CXX compile features - done
+[0.480s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[0.484s] -- Checking for module 'bullet>=2.82'
+[0.505s] --   Found bullet, version 2.88
+[0.618s] -- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") 
+[0.675s] -- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") 
+[0.740s] -- Found assimp: /usr/include (found version "5.0.0") 
+[0.758s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.049s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.062s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+[1.065s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.069s] -- Searching for dependencies of ignition-math6
+[1.071s] -- Looking for OGRE...
+[1.071s] -- OGRE_PREFIX_WATCH changed.
+[1.076s] -- Checking for module 'OGRE'
+[1.092s] --   Found OGRE, version 1.9.0
+[1.140s] -- Found Ogre Ghadamon (1.9.0)
+[1.143s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.152s] -- Looking for OGRE_Paging...
+[1.156s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.156s] -- Looking for OGRE_Terrain...
+[1.159s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.159s] -- Looking for OGRE_Property...
+[1.162s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.162s] -- Looking for OGRE_RTShaderSystem...
+[1.165s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.165s] -- Looking for OGRE_Volume...
+[1.168s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.168s] -- Looking for OGRE_Overlay...
+[1.171s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.236s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.236s] -- Looking for ignition-transport8 -- found version 8.3.0
+[1.237s] -- Searching for dependencies of ignition-transport8
+[1.246s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+[1.250s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.253s] -- Checking for module 'libzmq >= 4'
+[1.269s] --   Found libzmq , version 4.3.2
+[1.310s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.316s] -- Checking for module 'uuid'
+[1.333s] --   Found uuid, version 2.34.0
+[1.381s] -- Found UUID: TRUE  
+[1.382s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[1.382s] -- Searching for dependencies of ignition-msgs5
+[1.397s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.403s] -- Checking for module 'tinyxml2'
+[1.424s] --   Found tinyxml2, version 6.2.0
+[1.469s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[1.470s] -- Looking for ignition-common3 -- found version 3.14.2
+[1.470s] -- Searching for dependencies of ignition-common3
+[1.471s] -- Looking for dlfcn.h - found
+[1.471s] -- Looking for libdl - found
+[1.473s] -- Found DL: TRUE  
+[1.480s] -- Searching for <ignition-common3> component [graphics]
+[1.481s] -- Looking for ignition-common3-graphics -- found version 3.14.2
+[1.482s] -- Searching for dependencies of ignition-common3-graphics
+[1.482s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.484s] -- Looking for ignition-fuel_tools4 -- found version 4.6.0
+[1.485s] -- Searching for dependencies of ignition-fuel_tools4
+[1.571s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  
+[1.578s] -- Checking for module 'jsoncpp'
+[1.598s] --   Found jsoncpp, version 1.7.4
+[1.645s] -- Found JSONCPP: TRUE  
+[1.651s] -- Checking for module 'libzip'
+[1.670s] --   Found libzip, version 1.5.1
+[1.722s] -- Found ZIP: TRUE  
+[1.722s] -- Looking for ignition-common3 -- found version 3.14.2
+[1.723s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.724s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[1.727s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.746s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.746s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.871s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.943s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.954s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.955s] -- Added test 'lint_cmake' to check CMake code style
+[1.956s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.962s] -- Added test 'xmllint' to check XML markup files
+[1.965s] -- Configuring done
+[1.970s] -- Generating done
+[1.972s] -- Build files have been written to: /root/Presentation/dolly/build/dolly_gazebo
+[1.979s] Invoked command in '/root/Presentation/dolly/build/dolly_gazebo' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly_gazebo -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_gazebo
+[1.984s] Invoking command in '/root/Presentation/dolly/build/dolly_gazebo': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly_gazebo -- -j16 -l16
+[2.024s] Invoked command in '/root/Presentation/dolly/build/dolly_gazebo' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly_gazebo -- -j16 -l16
+[2.050s] Invoking command in '/root/Presentation/dolly/build/dolly_gazebo': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly_gazebo
+[2.058s] -- Install configuration: ""
+[2.058s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//launch
+[2.059s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//launch/dolly.launch.py
+[2.059s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models
+[2.059s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female
+[2.059s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials
+[2.059s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures
+[2.059s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/brown_eye.png
+[2.059s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/casual_female.png
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyebrow002.png
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyelashes01.png
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_diffuse.png
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_normal.png
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_diffuse.png
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_normal.png
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/ponytail01_diffuse.png
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/shoes05_diffuse.png
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/tongue01_diffuse.png
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/young_lightskinned_female_diffuse.png
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/meshes
+[2.060s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/meshes/casual_female.dae
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.config
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.sdf
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/1.png
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/2.png
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/3.png
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/4.png
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/5.png
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures
+[2.061s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain (original).jpg
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain.jpg
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/forest.jpg
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.config
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.sdf
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/scripts
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/scripts/script.material
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/textures
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/textures/sheep.jpg
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.config
+[2.062s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.sdf
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.frag
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.vert
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/scripts
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/scripts/ocean.material
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/License and source soil_sand_0045_01.txt
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds.jpg
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_bk.jpg
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_dn.jpg
+[2.063s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_fr.jpg
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_lf.jpg
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_rt.jpg
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_up.jpg
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/normals.dds
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/soil_sand_0045_01.jpg
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh-simple.dae
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.blend
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.dae
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh_below.dae
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.config
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.sdf
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//rviz
+[2.064s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//rviz/dolly_gazebo.rviz
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//worlds
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_city.world
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_empty.world
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.sh
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.dsv
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/ament_index/resource_index/package_run_dependencies/dolly_gazebo
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/ament_index/resource_index/parent_prefix_path/dolly_gazebo
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.sh
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.dsv
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/path.sh
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/environment/path.dsv
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/local_setup.bash
+[2.065s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/local_setup.sh
+[2.066s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/local_setup.zsh
+[2.066s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/local_setup.dsv
+[2.066s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.dsv
+[2.066s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/ament_index/resource_index/packages/dolly_gazebo
+[2.066s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig.cmake
+[2.066s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig-version.cmake
+[2.066s] -- Installing: /root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.xml
+[2.070s] Invoked command in '/root/Presentation/dolly/build/dolly_gazebo' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly_gazebo

@@ -1,0 +1,10 @@
+/root/Presentation/dolly/build/dolly_follow/CMakeFiles/install/strip.dir
+/root/Presentation/dolly/build/dolly_follow/CMakeFiles/install/local.dir
+/root/Presentation/dolly/build/dolly_follow/CMakeFiles/install.dir
+/root/Presentation/dolly/build/dolly_follow/CMakeFiles/list_install_components.dir
+/root/Presentation/dolly/build/dolly_follow/CMakeFiles/rebuild_cache.dir
+/root/Presentation/dolly/build/dolly_follow/CMakeFiles/edit_cache.dir
+/root/Presentation/dolly/build/dolly_follow/CMakeFiles/test.dir
+/root/Presentation/dolly/build/dolly_follow/CMakeFiles/dolly_follow.dir
+/root/Presentation/dolly/build/dolly_follow/CMakeFiles/dolly_follow_uninstall.dir
+/root/Presentation/dolly/build/dolly_follow/CMakeFiles/uninstall.dir

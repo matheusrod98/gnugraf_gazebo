@@ -1,0 +1,6 @@
+Invoking command in '/root/Presentation/dolly/build/dolly_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly_follow -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_follow
+Invoked command in '/root/Presentation/dolly/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly_follow -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_follow
+Invoking command in '/root/Presentation/dolly/build/dolly_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly_follow -- -j16 -l16
+Invoked command in '/root/Presentation/dolly/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly_follow -- -j16 -l16
+Invoking command in '/root/Presentation/dolly/build/dolly_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly_follow
+Invoked command in '/root/Presentation/dolly/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly_follow

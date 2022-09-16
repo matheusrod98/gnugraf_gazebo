@@ -1,0 +1,370 @@
+[0.157s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.158s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f76e8108a90>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f76e8108a90>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f76e81110a0>)
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.193s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.194s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.194s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/Presentation/dolly'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extension 'ros'
+[0.207s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dolly/dolly' with type 'ros.ament_cmake' and name 'dolly'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extension 'ros'
+[0.208s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dolly/dolly_follow' with type 'ros.ament_cmake' and name 'dolly_follow'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dolly/dolly_gazebo' with type 'ros.ament_cmake' and name 'dolly_gazebo'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dolly/dolly_ignition' with type 'ros.ament_cmake' and name 'dolly_ignition'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'ros'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['cmake', 'python']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'cmake'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'python'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['python_setup_py']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'python_setup_py'
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'dolly_follow' build argument 'cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'dolly_follow' build argument 'cmake_target' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'dolly_follow' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'dolly_follow' build argument 'cmake_clean_cache' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'dolly_follow' build argument 'cmake_clean_first' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'dolly_follow' build argument 'cmake_force_configure' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'dolly_follow' build argument 'ament_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'dolly_follow' build argument 'catkin_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'dolly_follow' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.249s] DEBUG:colcon.colcon_core.verb:Building package 'dolly_follow' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/Presentation/dolly/build/dolly_follow', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/Presentation/dolly/install/dolly_follow', 'merge_install': False, 'path': '/root/Presentation/dolly/src/dolly/dolly_follow', 'symlink_install': False, 'test_result_base': None}
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'dolly_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'dolly_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'dolly_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'dolly_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'dolly_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'dolly_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'dolly_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'dolly_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'dolly_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.249s] DEBUG:colcon.colcon_core.verb:Building package 'dolly_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/Presentation/dolly/build/dolly_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/Presentation/dolly/install/dolly_gazebo', 'merge_install': False, 'path': '/root/Presentation/dolly/src/dolly/dolly_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dolly_ignition' build argument 'cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dolly_ignition' build argument 'cmake_target' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dolly_ignition' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dolly_ignition' build argument 'cmake_clean_cache' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dolly_ignition' build argument 'cmake_clean_first' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dolly_ignition' build argument 'cmake_force_configure' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dolly_ignition' build argument 'ament_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dolly_ignition' build argument 'catkin_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dolly_ignition' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.250s] DEBUG:colcon.colcon_core.verb:Building package 'dolly_ignition' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/Presentation/dolly/build/dolly_ignition', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/Presentation/dolly/install/dolly_ignition', 'merge_install': False, 'path': '/root/Presentation/dolly/src/dolly/dolly_ignition', 'symlink_install': False, 'test_result_base': None}
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'dolly' build argument 'cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'dolly' build argument 'cmake_target' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'dolly' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'dolly' build argument 'cmake_clean_cache' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'dolly' build argument 'cmake_clean_first' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'dolly' build argument 'cmake_force_configure' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'dolly' build argument 'ament_cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'dolly' build argument 'catkin_cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'dolly' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.251s] DEBUG:colcon.colcon_core.verb:Building package 'dolly' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/Presentation/dolly/build/dolly', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/Presentation/dolly/install/dolly', 'merge_install': False, 'path': '/root/Presentation/dolly/src/dolly/dolly', 'symlink_install': False, 'test_result_base': None}
+[0.252s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.255s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.255s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/Presentation/dolly/src/dolly/dolly_follow' with build type 'ament_cmake'
+[0.256s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/Presentation/dolly/src/dolly/dolly_follow'
+[0.260s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.261s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.261s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.262s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/Presentation/dolly/install/dolly' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.262s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/Presentation/dolly/install/dolly_ignition' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.262s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/Presentation/dolly/install/dolly_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.262s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/Presentation/dolly/install/dolly_follow' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.262s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/Presentation/dolly/install/dolly' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.262s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/Presentation/dolly/install/dolly_ignition' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.262s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/Presentation/dolly/install/dolly_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.262s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/Presentation/dolly/install/dolly_follow' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly_follow -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_follow
+[1.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly_follow -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_follow
+[1.922s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly_follow -- -j16 -l16
+[6.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly_follow -- -j16 -l16
+[6.622s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly_follow
+[6.644s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dolly_follow)
+[6.644s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly_follow
+[6.651s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow' for CMake module files
+[6.651s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow' for CMake config files
+[6.651s] Level 1:colcon.colcon_core.shell:create_environment_hook('dolly_follow', 'cmake_prefix_path')
+[6.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/hook/cmake_prefix_path.ps1'
+[6.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/hook/cmake_prefix_path.dsv'
+[6.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/hook/cmake_prefix_path.sh'
+[6.656s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow/lib'
+[6.656s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow/bin'
+[6.656s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow/lib/pkgconfig/dolly_follow.pc'
+[6.658s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow/lib/python3.8/site-packages'
+[6.659s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow/bin'
+[6.661s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.ps1'
+[6.663s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.dsv'
+[6.664s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.sh'
+[6.665s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.bash'
+[6.667s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.zsh'
+[6.668s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/Presentation/dolly/install/dolly_follow/share/colcon-core/packages/dolly_follow)
+[6.699s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dolly_follow)
+[6.700s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow' for CMake module files
+[6.701s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow' for CMake config files
+[6.701s] Level 1:colcon.colcon_core.shell:create_environment_hook('dolly_follow', 'cmake_prefix_path')
+[6.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/hook/cmake_prefix_path.ps1'
+[6.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/hook/cmake_prefix_path.dsv'
+[6.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/hook/cmake_prefix_path.sh'
+[6.703s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow/lib'
+[6.703s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow/bin'
+[6.703s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow/lib/pkgconfig/dolly_follow.pc'
+[6.703s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow/lib/python3.8/site-packages'
+[6.703s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_follow/bin'
+[6.704s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.ps1'
+[6.705s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.dsv'
+[6.705s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.sh'
+[6.705s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.bash'
+[6.706s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_follow/share/dolly_follow/package.zsh'
+[6.706s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/Presentation/dolly/install/dolly_follow/share/colcon-core/packages/dolly_follow)
+[6.706s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/Presentation/dolly/src/dolly/dolly_gazebo' with build type 'ament_cmake'
+[6.706s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/Presentation/dolly/src/dolly/dolly_gazebo'
+[6.707s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.707s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.716s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/Presentation/dolly/src/dolly/dolly_ignition' with build type 'ament_cmake'
+[6.717s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/Presentation/dolly/src/dolly/dolly_ignition'
+[6.718s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.719s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.730s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly_ignition': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly_ignition -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_ignition
+[6.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly_gazebo': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly_gazebo -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_gazebo
+[8.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly_gazebo' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly_gazebo -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_gazebo
+[8.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly_gazebo': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly_gazebo -- -j16 -l16
+[8.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly_gazebo' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly_gazebo -- -j16 -l16
+[8.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly_ignition' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly_ignition -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly_ignition
+[8.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly_ignition': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly_ignition -- -j16 -l16
+[8.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly_gazebo': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly_gazebo
+[8.777s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dolly_gazebo)
+[8.779s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo' for CMake module files
+[8.780s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly_gazebo' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly_gazebo
+[8.781s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo' for CMake config files
+[8.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('dolly_gazebo', 'cmake_prefix_path')
+[8.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/hook/cmake_prefix_path.ps1'
+[8.784s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/hook/cmake_prefix_path.dsv'
+[8.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/hook/cmake_prefix_path.sh'
+[8.785s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo/bin'
+[8.785s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo/lib/pkgconfig/dolly_gazebo.pc'
+[8.785s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo/lib/python3.8/site-packages'
+[8.785s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo/bin'
+[8.787s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.ps1'
+[8.787s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.dsv'
+[8.788s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.sh'
+[8.788s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.bash'
+[8.789s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.zsh'
+[8.789s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/Presentation/dolly/install/dolly_gazebo/share/colcon-core/packages/dolly_gazebo)
+[8.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly_ignition' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly_ignition -- -j16 -l16
+[8.811s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dolly_gazebo)
+[8.813s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo' for CMake module files
+[8.813s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo' for CMake config files
+[8.814s] Level 1:colcon.colcon_core.shell:create_environment_hook('dolly_gazebo', 'cmake_prefix_path')
+[8.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/hook/cmake_prefix_path.ps1'
+[8.815s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/hook/cmake_prefix_path.dsv'
+[8.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/hook/cmake_prefix_path.sh'
+[8.815s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo/bin'
+[8.816s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo/lib/pkgconfig/dolly_gazebo.pc'
+[8.816s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo/lib/python3.8/site-packages'
+[8.816s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_gazebo/bin'
+[8.817s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.ps1'
+[8.817s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.dsv'
+[8.818s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.sh'
+[8.818s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.bash'
+[8.818s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_gazebo/share/dolly_gazebo/package.zsh'
+[8.818s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/Presentation/dolly/install/dolly_gazebo/share/colcon-core/packages/dolly_gazebo)
+[8.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly_ignition': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly_ignition
+[8.836s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dolly_ignition)
+[8.837s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition' for CMake module files
+[8.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly_ignition' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly_ignition
+[8.838s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition' for CMake config files
+[8.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('dolly_ignition', 'cmake_prefix_path')
+[8.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/hook/cmake_prefix_path.ps1'
+[8.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/hook/cmake_prefix_path.dsv'
+[8.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/hook/cmake_prefix_path.sh'
+[8.840s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition/bin'
+[8.840s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition/lib/pkgconfig/dolly_ignition.pc'
+[8.841s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition/lib/python3.8/site-packages'
+[8.841s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition/bin'
+[8.842s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.ps1'
+[8.842s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.dsv'
+[8.843s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.sh'
+[8.843s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.bash'
+[8.843s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.zsh'
+[8.843s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/Presentation/dolly/install/dolly_ignition/share/colcon-core/packages/dolly_ignition)
+[8.864s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dolly_ignition)
+[8.866s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition' for CMake module files
+[8.867s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition' for CMake config files
+[8.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('dolly_ignition', 'cmake_prefix_path')
+[8.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/hook/cmake_prefix_path.ps1'
+[8.868s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/hook/cmake_prefix_path.dsv'
+[8.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/hook/cmake_prefix_path.sh'
+[8.870s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition/bin'
+[8.870s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition/lib/pkgconfig/dolly_ignition.pc'
+[8.870s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition/lib/python3.8/site-packages'
+[8.870s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly_ignition/bin'
+[8.871s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.ps1'
+[8.871s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.dsv'
+[8.872s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.sh'
+[8.872s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.bash'
+[8.872s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly_ignition/share/dolly_ignition/package.zsh'
+[8.873s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/Presentation/dolly/install/dolly_ignition/share/colcon-core/packages/dolly_ignition)
+[8.873s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/Presentation/dolly/src/dolly/dolly' with build type 'ament_cmake'
+[8.873s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/Presentation/dolly/src/dolly/dolly'
+[8.874s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.874s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.887s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly
+[9.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/opt/ros/foxy /usr/bin/cmake /root/Presentation/dolly/src/dolly/dolly -DCMAKE_INSTALL_PREFIX=/root/Presentation/dolly/install/dolly
+[9.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly -- -j16 -l16
+[9.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/opt/ros/foxy /usr/bin/cmake --build /root/Presentation/dolly/build/dolly -- -j16 -l16
+[9.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Presentation/dolly/build/dolly': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly
+[9.725s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dolly)
+[9.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Presentation/dolly/build/dolly' returned '0': CMAKE_PREFIX_PATH=/root/Presentation/dolly/install/dolly_ignition:/root/Presentation/dolly/install/dolly_gazebo:/root/Presentation/dolly/install/dolly_follow:/root/Presentation/dolly/install/dolly:/opt/ros/foxy /usr/bin/cmake --install /root/Presentation/dolly/build/dolly
+[9.728s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly' for CMake module files
+[9.728s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly' for CMake config files
+[9.729s] Level 1:colcon.colcon_core.shell:create_environment_hook('dolly', 'cmake_prefix_path')
+[9.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly/share/dolly/hook/cmake_prefix_path.ps1'
+[9.730s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Presentation/dolly/install/dolly/share/dolly/hook/cmake_prefix_path.dsv'
+[9.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly/share/dolly/hook/cmake_prefix_path.sh'
+[9.731s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly/bin'
+[9.731s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly/lib/pkgconfig/dolly.pc'
+[9.731s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly/lib/python3.8/site-packages'
+[9.731s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly/bin'
+[9.732s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly/share/dolly/package.ps1'
+[9.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/Presentation/dolly/install/dolly/share/dolly/package.dsv'
+[9.733s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly/share/dolly/package.sh'
+[9.733s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly/share/dolly/package.bash'
+[9.733s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly/share/dolly/package.zsh'
+[9.733s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/Presentation/dolly/install/dolly/share/colcon-core/packages/dolly)
+[9.755s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dolly)
+[9.760s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly' for CMake module files
+[9.761s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly' for CMake config files
+[9.761s] Level 1:colcon.colcon_core.shell:create_environment_hook('dolly', 'cmake_prefix_path')
+[9.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly/share/dolly/hook/cmake_prefix_path.ps1'
+[9.764s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Presentation/dolly/install/dolly/share/dolly/hook/cmake_prefix_path.dsv'
+[9.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Presentation/dolly/install/dolly/share/dolly/hook/cmake_prefix_path.sh'
+[9.766s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly/bin'
+[9.766s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly/lib/pkgconfig/dolly.pc'
+[9.766s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly/lib/python3.8/site-packages'
+[9.767s] Level 1:colcon.colcon_core.environment:checking '/root/Presentation/dolly/install/dolly/bin'
+[9.769s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly/share/dolly/package.ps1'
+[9.770s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/Presentation/dolly/install/dolly/share/dolly/package.dsv'
+[9.771s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly/share/dolly/package.sh'
+[9.772s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly/share/dolly/package.bash'
+[9.772s] INFO:colcon.colcon_core.shell:Creating package script '/root/Presentation/dolly/install/dolly/share/dolly/package.zsh'
+[9.773s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/Presentation/dolly/install/dolly/share/colcon-core/packages/dolly)
+[9.773s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.774s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.799s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[9.799s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.799s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.800s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.804s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[9.804s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.806s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/Presentation/dolly/install/local_setup.ps1'
+[9.807s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/Presentation/dolly/install/_local_setup_util_ps1.py'
+[9.808s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/Presentation/dolly/install/setup.ps1'
+[9.809s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/Presentation/dolly/install/local_setup.sh'
+[9.810s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/Presentation/dolly/install/_local_setup_util_sh.py'
+[9.810s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/Presentation/dolly/install/setup.sh'
+[9.811s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/Presentation/dolly/install/local_setup.bash'
+[9.812s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/Presentation/dolly/install/setup.bash'
+[9.813s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/Presentation/dolly/install/local_setup.zsh'
+[9.813s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/Presentation/dolly/install/setup.zsh'
